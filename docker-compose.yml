@@ -1,0 +1,7 @@
+services:
+  brawl-picks-ai:
+    build: .
+    container_name: brawl-picks-ai
+    restart: unless-stopped
+    env_file:
+      - .env
